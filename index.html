@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Didier Vally - Ingénieur en Développement & Chef de Projet IA</title>
+    <title>Didier Vally - Ingénieur & Architecte en Solutions IA</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -14,55 +14,73 @@
             color: #333;
         }
         .container {
-            max-width: 960px;
+            max-width: 1100px; /* Largeur augmentée pour mieux accommoder 4 colonnes */
             margin: auto;
             overflow: auto;
             padding: 0 20px;
         }
         header {
-            background: #333;
+            background: #2c3e50; /* Couleur plus moderne */
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
+            border-bottom: 4px solid #3498db;
         }
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #ecf0f1;
         }
         section {
             background: #fff;
             margin: 20px 0;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
         }
         h2 {
-            color: #333;
-            border-bottom: 2px solid #007BFF;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
             padding-bottom: 10px;
+            margin-top: 0;
         }
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
         .skill-category {
-            padding: 15px;
+            padding: 20px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
         }
         .skill-category h3 {
             margin-top: 0;
-            color: #007BFF;
+            color: #3498db;
+            font-size: 1.2rem;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         ul li {
-            background: #f4f4f4;
-            margin-bottom: 5px;
-            padding: 8px;
-            border-radius: 3px;
+            background: #f0f4f8;
+            margin-bottom: 8px;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.95rem;
+        }
+        strong {
+            color: #2c3e50;
         }
         footer {
             text-align: center;
@@ -77,7 +95,7 @@
     <header>
         <div class="container">
             <h1>Didier Vally</h1>
-            <p>Ingénieur en Développement & Chef de Projet | Spécialiste Data & IA pour la Finance</p>
+            <p>Ingénieur en Développement & Chef de Projet | Spécialiste IA & Systèmes Autonomes pour la Finance</p>
         </div>
     </header>
 
@@ -85,15 +103,27 @@
         <section id="a-propos">
             <h2>À propos de moi</h2>
             <p>
-                Passionné par l'intersection de la finance de marché et de l'intelligence artificielle, je conçois et pilote des projets informatiques innovants. Fort d'une solide expérience en développement C# et sur l'écosystème .NET, je me spécialise dans la création de solutions d'IA performantes, de la conception des modèles à leur mise en production.
+                Passionné par l'intersection de la finance de marché et de l'intelligence artificielle, je conçois et pilote des projets informatiques innovants. Je me spécialise dans la création de solutions performantes, allant des modèles prédictifs traditionnels aux <strong>systèmes d'agents IA autonomes</strong>, en m'appuyant sur une expertise solide en C# et sur l'écosystème .NET.
             </p>
         </section>
 
         <section id="competences">
-            <h2>Compétences Techniques</h2>
+            <h2>Compétences Clés</h2>
             <div class="skills-grid">
+                
                 <div class="skill-category">
-                    <h3>Intelligence Artificielle & Machine Learning</h3>
+                    <h3>IA Agentique & Systèmes Autonomes</h3>
+                    <ul>
+                        <li><strong>Frameworks d'agents :</strong> Maîtrise de <strong>CrewAI</strong> pour la collaboration d'agents</li>
+                        <li><strong>Conception d'agents :</strong> Création d'agents autonomes avec rôles, objectifs et outils dédiés</li>
+                        <li><strong>Planification & Exécution :</strong> Développement de processus complexes (planning, décomposition de tâches)</li>
+                        <li><strong>Intégration d'outils (Tooling) :</strong> Connexion des agents à des API et sources de données externes</li>
+                        <li><strong>Modèles sous-jacents :</strong> Utilisation de LLMs (GPT-4, Llama) comme moteur de raisonnement</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>IA & Machine Learning</h3>
                     <ul>
                         <li><strong>Entraînement de modèles :</strong> Régression, Classification, Clustering</li>
                         <li><strong>Deep Learning :</strong> Réseaux de neurones récurrents (LSTM, GRU) pour séries temporelles</li>
@@ -104,10 +134,10 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Développement C# et Écosystème .NET</h3>
+                    <h3>Développement C# et .NET Core</h3>
                     <ul>
                         <li><strong>Langage :</strong> C# (expert)</li>
-                        <li><strong>Framework :</strong> .NET Core / .NET 5+</li>
+                        <li><strong>Framework :</strong> .NET Core / .NET 8+</li>
                         <li><strong>Web :</strong> API REST avec ASP.NET Core, Microservices</li>
                         <li><strong>Accès aux données :</strong> Entity Framework Core, Dapper</li>
                         <li><strong>Bases de données :</strong> SQL Server, PostgreSQL, Redis</li>
@@ -116,13 +146,13 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>IA Appliquée à la Finance de Marché</h3>
+                    <h3>IA pour la Finance de Marché</h3>
                     <ul>
                         <li><strong>Trading Algorithmique :</strong> Développement de stratégies basées sur des signaux IA</li>
                         <li><strong>Analyse prédictive :</strong> Prédiction de volatilité et de mouvements de prix</li>
                         <li><strong>Gestion des risques :</strong> Modélisation du risque de crédit et de marché</li>
                         <li><strong>Analyse de séries temporelles :</strong> Modèles ARIMA, GARCH, et approches Deep Learning</li>
-                        <li><strong>Outils spécifiques :</strong> Intégration avec des API de brokers (e.g., Interactive Brokers), backtesting de stratégies</li>
+                        <li><strong>Backtesting de stratégies :</strong> Intégration avec des API de brokers et plateformes de test</li>
                     </ul>
                 </div>
             </div>
@@ -133,13 +163,6 @@
             <p>
                 Cette section sera bientôt mise à jour avec des exemples concrets de mes réalisations, incluant des liens vers les dépôts GitHub et des démonstrations.
             </p>
-            <!-- Exemple de projet à venir -->
-            <!-- 
-            <article>
-                <h3>Projet 1 : Moteur de Prédiction de Tendance Boursière</h3>
-                <p>Développement d'un modèle LSTM en C# avec ML.NET pour prédire les tendances à court terme d'actifs, basé sur des données historiques et l'analyse de sentiment de news en temps réel.</p>
-            </article> 
-            -->
         </section>
 
     </div>
